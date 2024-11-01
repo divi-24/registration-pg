@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Electrokart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login_form">
+        <h3>Electrokart</h3>
+        <p>Create your account to access exclusive Electrokart services</p>
+        
+        <div class="login_option">
+            <div class="option">
+                <a href="#" class="google-button">
+                    <img src="https://icon2.cleanpng.com/20240216/ikb/transparent-google-logo-google-logo-with-multicolored-g-and-1710875587855.webp" alt="Google login button"> Sign in with Google
+                </a>
+            </div>
+            <div class="option">
+                <a href="#" class="linkedin-button">
+                    <img src="https://static.vecteezy.com/system/resources/previews/018/910/721/non_2x/linkedin-logo-linkedin-symbol-linkedin-icon-free-free-vector.jpg" alt="LinkedIn login button"> Sign in with LinkedIn
+                </a>
+            </div>
+        </div>
+        
+        <div class="separator">
+            <span>or</span>
+        </div>
+
+        <form id="registrationForm">
+            <div class="input_box">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name" required>
+            </div>
+            <div class="input_box">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input_box">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Create a password" required>
+                <span class="password_title">
+                    <a href="#" onclick="togglePasswordVisibility()">Show</a>
+                </span>
+            </div>
+            <button type="submit">Register</button>
+            <p>Forgot your password? <a href="login.html">Reset it here</a></p>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
